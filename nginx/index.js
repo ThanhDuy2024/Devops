@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/login', (req, res) => {
+  res.status(200).json({
+    message: "login is here!"
+  })
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
